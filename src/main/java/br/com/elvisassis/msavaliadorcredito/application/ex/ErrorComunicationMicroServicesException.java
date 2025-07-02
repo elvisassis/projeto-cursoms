@@ -1,0 +1,1 @@
+package br.com.elvisassis.msavaliadorcredito.application.ex;import lombok.Getter;public class ErrorComunicationMicroServicesException extends Exception{    @Getter    private Integer status;    public ErrorComunicationMicroServicesException(String msg, Integer status) {        super(msg);        this.status = status;    }}

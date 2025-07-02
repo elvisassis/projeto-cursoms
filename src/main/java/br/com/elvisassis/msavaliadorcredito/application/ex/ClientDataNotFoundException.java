@@ -1,0 +1,1 @@
+package br.com.elvisassis.msavaliadorcredito.application.ex;public class ClientDataNotFoundException extends Exception {    public ClientDataNotFoundException() {        super("Dados do clinte não encontrado para o CPF informado.");    }}
