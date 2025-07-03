@@ -1,0 +1,1 @@
+package br.com.elvisassis.mscartoes.exception.handler;import java.util.Date;public record ExceptionResponse(Date timeStamp, String message, String details) {}
