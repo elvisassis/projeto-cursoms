@@ -1,0 +1,1 @@
+package br.com.elvisassis.msavaliadorcredito.application.ex;public class CardIssuanceErrorException extends RuntimeException {    public CardIssuanceErrorException(String message) {        super(message);    }}
