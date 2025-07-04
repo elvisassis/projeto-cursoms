@@ -11,20 +11,20 @@ import org.springframework.context.annotation.Bean;
 @EnableDiscoveryClient
 public class MsCloudGatewayApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MsCloudGatewayApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MsCloudGatewayApplication.class, args);
+    }
 
-	@Bean
-	public RouteLocator route(RouteLocatorBuilder builder) {
+    @Bean
+    public RouteLocator route(RouteLocatorBuilder builder) {
 
 
-		return builder
-				.routes()
-					.route( r ->
-							r.path("/clientes/**")
-									.uri("lb://msclientes"))
-				.build();
-	}
+        return builder
+                .routes()
+                .route(r -> r.path("/clientes/**").uri("lb://msclientes"))
+                .route(r -> r.path("/cartoes/**").uri("lb://mscartoes"))
+                .route(r -> r.path("/avaliacoes-credito/**").uri("lb://msavaliadorcredito"))
+                .build();
+    }
 
 }
