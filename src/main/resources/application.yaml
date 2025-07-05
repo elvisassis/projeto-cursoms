@@ -1,6 +1,10 @@
 spring:
   application:
     name: eurikaserver
+  security:
+    user:
+      name: cursoms-eureka-user
+      password: podixo03
 
 server:
   port: 8761
