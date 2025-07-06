@@ -1,0 +1,164 @@
+2025-07-06T10:32:10.969-03:00  INFO 2218655 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : Starting MsCloudGatewayApplication using Java 24 with PID 2218655 (/home/elvis/projetos/udemy/microservices/projeto-cursoms/projeto-cursoms-elvis/mscloudgateway/target/classes started by elvis in /home/elvis/projetos/udemy/microservices/projeto-cursoms/projeto-cursoms-elvis/mscloudgateway)
+2025-07-06T10:32:10.972-03:00  INFO 2218655 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-07-06T10:32:14.937-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73a4c219-3669-3626-b154-76b6971b0422
+2025-07-06T10:32:16.598-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-07-06T10:32:16.599-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-07-06T10:32:16.600-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-07-06T10:32:16.600-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-06T10:32:16.600-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-06T10:32:16.600-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-07-06T10:32:16.600-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-06T10:32:17.268-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-06T10:32:18.095-03:00  INFO 2218655 --- [mscloudgateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-06T10:32:18.115-03:00  WARN 2218655 --- [mscloudgateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-06T10:32:18.162-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-06T10:32:18.179-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-06T10:32:18.182-03:00  INFO 2218655 --- [mscloudgateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-06T10:32:18.189-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-06T10:32:18.189-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-06T10:32:18.189-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-06T10:32:18.189-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-06T10:32:18.189-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-06T10:32:18.190-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-06T10:32:18.190-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-06T10:32:18.722-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-06T10:32:18.723-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-06T10:32:18.724-03:00  INFO 2218655 --- [mscloudgateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-06T10:32:18.726-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1751808738725 with initial instances count: 0
+2025-07-06T10:32:18.729-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCLOUDGATEWAY with eureka with status UP
+2025-07-06T10:32:18.729-03:00  INFO 2218655 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1751808738729, current=UP, previous=STARTING]
+2025-07-06T10:32:18.731-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080: registering service...
+2025-07-06T10:32:18.871-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - registration status: 204
+2025-07-06T10:32:18.930-03:00  INFO 2218655 --- [mscloudgateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-07-06T10:32:18.932-03:00  INFO 2218655 --- [mscloudgateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-07-06T10:32:19.004-03:00  INFO 2218655 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : Started MsCloudGatewayApplication in 9.402 seconds (process running for 11.226)
+2025-07-06T10:32:48.724-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-06T10:32:48.726-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-06T10:32:48.727-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-06T10:32:48.727-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-06T10:32:48.728-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-06T10:32:48.729-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-07-06T10:32:48.730-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-06T10:32:48.897-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-06T10:33:56.773-03:00  INFO 2218655 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCLOUDGATEWAY with eureka with status DOWN
+2025-07-06T10:33:56.789-03:00  INFO 2218655 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1751808836789, current=DOWN, previous=UP]
+2025-07-06T10:33:56.795-03:00  INFO 2218655 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080: registering service...
+2025-07-06T10:33:56.805-03:00  INFO 2218655 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-06T10:34:24.703-03:00  INFO 2223309 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : Starting MsCloudGatewayApplication using Java 24 with PID 2223309 (/home/elvis/projetos/udemy/microservices/projeto-cursoms/projeto-cursoms-elvis/mscloudgateway/target/classes started by elvis in /home/elvis/projetos/udemy/microservices/projeto-cursoms/projeto-cursoms-elvis/mscloudgateway)
+2025-07-06T10:34:24.704-03:00  INFO 2223309 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-07-06T10:34:27.344-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d2139b76-b717-33a8-981b-741ec9832823
+2025-07-06T10:34:28.802-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-07-06T10:34:28.803-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-07-06T10:34:28.804-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-06T10:34:28.804-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-06T10:34:28.804-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-07-06T10:34:28.804-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-06T10:34:29.156-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-06T10:34:29.613-03:00  INFO 2223309 --- [mscloudgateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-06T10:34:29.637-03:00  WARN 2223309 --- [mscloudgateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-06T10:34:29.687-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-06T10:34:29.703-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-06T10:34:29.706-03:00  INFO 2223309 --- [mscloudgateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-06T10:34:29.712-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-06T10:34:30.688-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-06T10:34:30.689-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-06T10:34:30.690-03:00  INFO 2223309 --- [mscloudgateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-06T10:34:30.691-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1751808870691 with initial instances count: 1
+2025-07-06T10:34:30.694-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCLOUDGATEWAY with eureka with status UP
+2025-07-06T10:34:30.694-03:00  INFO 2223309 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1751808870694, current=UP, previous=STARTING]
+2025-07-06T10:34:30.695-03:00  INFO 2223309 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080: registering service...
+2025-07-06T10:34:31.185-03:00  INFO 2223309 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - registration status: 204
+2025-07-06T10:34:31.523-03:00  INFO 2223309 --- [mscloudgateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-07-06T10:34:31.524-03:00  INFO 2223309 --- [mscloudgateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-07-06T10:34:31.767-03:00  INFO 2223309 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : Started MsCloudGatewayApplication in 8.141 seconds (process running for 9.028)
+2025-07-06T10:39:29.715-03:00  INFO 2223309 --- [mscloudgateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-06T10:40:49.586-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCLOUDGATEWAY with eureka with status DOWN
+2025-07-06T10:40:49.586-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1751809249586, current=DOWN, previous=UP]
+2025-07-06T10:40:49.586-03:00  INFO 2223309 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080: registering service...
+2025-07-06T10:40:49.588-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-06T10:40:49.590-03:00  INFO 2223309 --- [mscloudgateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-07-06T10:40:49.669-03:00  INFO 2223309 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - registration status: 204
+2025-07-06T10:40:51.813-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-06T10:40:54.814-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-06T10:40:55.114-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - deregister  status: 200
+2025-07-06T10:40:55.115-03:00  INFO 2223309 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-07-06T10:54:19.700-03:00  INFO 2262899 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : Starting MsCloudGatewayApplication using Java 24 with PID 2262899 (/home/elvis/projetos/udemy/microservices/projeto-cursoms/projeto-cursoms-elvis/mscloudgateway/target/classes started by elvis in /home/elvis/projetos/udemy/microservices/projeto-cursoms/projeto-cursoms-elvis/mscloudgateway)
+2025-07-06T10:54:19.703-03:00  INFO 2262899 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-07-06T10:54:21.864-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d2139b76-b717-33a8-981b-741ec9832823
+2025-07-06T10:54:23.557-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-07-06T10:54:23.557-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-07-06T10:54:23.557-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-07-06T10:54:23.557-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-06T10:54:23.558-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-06T10:54:23.559-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-07-06T10:54:23.559-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-06T10:54:24.055-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-06T10:54:24.454-03:00  INFO 2262899 --- [mscloudgateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-06T10:54:24.489-03:00  WARN 2262899 --- [mscloudgateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-06T10:54:24.568-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-06T10:54:24.589-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-06T10:54:24.592-03:00  INFO 2262899 --- [mscloudgateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-06T10:54:24.600-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-06T10:54:24.600-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-06T10:54:24.601-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-06T10:54:24.601-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-06T10:54:24.601-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-06T10:54:24.601-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-06T10:54:24.601-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-06T10:54:26.207-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-06T10:54:26.208-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-06T10:54:26.209-03:00  INFO 2262899 --- [mscloudgateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-06T10:54:26.211-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1751810066210 with initial instances count: 0
+2025-07-06T10:54:26.213-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCLOUDGATEWAY with eureka with status UP
+2025-07-06T10:54:26.214-03:00  INFO 2262899 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1751810066214, current=UP, previous=STARTING]
+2025-07-06T10:54:26.215-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080: registering service...
+2025-07-06T10:54:26.419-03:00  INFO 2262899 --- [mscloudgateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-07-06T10:54:26.421-03:00  INFO 2262899 --- [mscloudgateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-07-06T10:54:26.479-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - registration status: 204
+2025-07-06T10:54:26.694-03:00  INFO 2262899 --- [mscloudgateway] [main] c.gateway.MsCloudGatewayApplication      : Started MsCloudGatewayApplication in 8.041 seconds (process running for 9.805)
+2025-07-06T10:54:56.209-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-06T10:54:56.210-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-06T10:54:56.211-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-06T10:54:56.212-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-06T10:54:56.212-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-06T10:54:56.213-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-07-06T10:54:56.213-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-06T10:54:56.336-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-06T10:55:03.269-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCLOUDGATEWAY with eureka with status DOWN
+2025-07-06T10:55:03.269-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1751810103269, current=DOWN, previous=UP]
+2025-07-06T10:55:03.269-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080: registering service...
+2025-07-06T10:55:03.271-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-06T10:55:03.290-03:00  INFO 2262899 --- [mscloudgateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-07-06T10:55:03.356-03:00  INFO 2262899 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - registration status: 204
+2025-07-06T10:55:05.345-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-06T10:55:08.347-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-06T10:55:08.485-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/192.168.2.106:mscloudgateway:8080 - deregister  status: 200
+2025-07-06T10:55:08.486-03:00  INFO 2262899 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
