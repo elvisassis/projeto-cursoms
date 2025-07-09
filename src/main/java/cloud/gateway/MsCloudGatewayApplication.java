@@ -1,5 +1,6 @@
 package cloud.gateway;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -12,6 +13,9 @@ import org.springframework.context.annotation.Bean;
 public class MsCloudGatewayApplication {
 
     public static void main(String[] args) {
+        // Carrega as variáveis do .env e as define como propriedades do sistema
+        Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
+        dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
         SpringApplication.run(MsCloudGatewayApplication.class, args);
     }
 
@@ -26,5 +30,6 @@ public class MsCloudGatewayApplication {
                 .route(r -> r.path("/avaliacoes-credito/**").uri("lb://msavaliadorcredito"))
                 .build();
     }
+
 
 }
