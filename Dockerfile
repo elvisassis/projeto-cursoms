@@ -23,4 +23,7 @@ WORKDIR /app
 # Copia apenas o .jar compilado do estágio anterior para uma imagem menor
 COPY --from=build /app/target/*.jar ./app.jar
 
+#ENV KEYCLOAK_SERVER=http://ms-keycloak
+#ENV KEYCLOAK_PORT=8080
+
 ENTRYPOINT ["java", "-jar", "app.jar"]
