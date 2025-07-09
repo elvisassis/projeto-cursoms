@@ -3,9 +3,9 @@ spring:
     name: msavaliadorcredito
   rabbitmq:
     host: ${RABBITMQ_SERVER}
-    port: 5672
-    username: guest
-    password: guest
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USER}
+    password: ${RABBITMQ_PASS}
 
 server:
   port: 0
