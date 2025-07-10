@@ -1,0 +1,1 @@
+package br.com.elvisassis.msavaliadorcredito.domain.model;import lombok.AllArgsConstructor;import lombok.Data;import java.util.List;@Data@AllArgsConstructorpublic class ReturnEvaluationClient {    private List<ApprovedCard> cards;}
