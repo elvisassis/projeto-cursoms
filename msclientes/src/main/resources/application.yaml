@@ -23,4 +23,4 @@ management:
         include: '*'
 logging:
   file:
-    name: ./logs/log-file.log
+    name: ./logs/log-file-clientes.log

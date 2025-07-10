@@ -27,4 +27,4 @@ eureka:
 
 logging:
   file:
-    name: ./logs/log-file.log
+    name: ./logs/log-file-gateway.log
