@@ -1,0 +1,1 @@
+package br.com.elvisassis.mscartoes.infra.repository;import br.com.elvisassis.mscartoes.domain.CardClient;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;import java.util.Optional;public interface CardClientRepository extends JpaRepository<CardClient, Long> {    Optional<List<CardClient>> findByCpf(String cpf);}

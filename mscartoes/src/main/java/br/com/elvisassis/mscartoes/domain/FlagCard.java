@@ -1,0 +1,1 @@
+package br.com.elvisassis.mscartoes.domain;public enum FlagCard {    MASTERCARD, VISA}
