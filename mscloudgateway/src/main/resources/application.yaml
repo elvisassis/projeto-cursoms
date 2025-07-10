@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: mscloudgateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_SERVER}:${KEYCLOAK_PORT}/realms/mscourserealm
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://cursoms-eureka-user:podixo03@${EUREKA_SERVER}:8761/eureka
+
+logging:
+  file:
+    name: ./logs/log-file.log
