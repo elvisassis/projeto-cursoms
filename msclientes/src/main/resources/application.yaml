@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: msclientes
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cursoms-eureka-user:podixo03@${EUREKA_SERVER}:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file:
+    name: ./logs/log-file.log
