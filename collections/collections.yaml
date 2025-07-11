@@ -1,0 +1,311 @@
+type: collection.insomnia.rest/5.0
+name: Curso microservices
+meta:
+  id: wrk_4cafa5060b1d409ca5a91ddcdfc43b8d
+  created: 1751303989494
+  modified: 1751303989494
+  description: ""
+collection:
+  - name: Cliente
+    meta:
+      id: fld_02ad9f70bf804e74b99a771135296c6e
+      created: 1751304037687
+      modified: 1751304037687
+      sortKey: -1751304037687
+      description: ""
+    children:
+      - url: "\thttp://localhost:8080/clientes"
+        name: Cadastrar Cliente
+        meta:
+          id: req_55e186d6a6de47168cc7d437613f7d5f
+          created: 1751304042138
+          modified: 1752164111123
+          isPrivate: false
+          description: ""
+          sortKey: -1751304042138
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"cpf":"0000000001",
+            	"name":"Elvis",
+            	"age": 25
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "\thttp://localhost:8080/clientes?cpf=0000000001"
+        name: Busca Cliente pelo cpf
+        meta:
+          id: req_480ac4627f8d49cd8485ffa6a6fa82c3
+          created: 1751305453173
+          modified: 1752164120126
+          isPrivate: false
+          description: ""
+          sortKey: -1751304042238
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Cartão
+    meta:
+      id: fld_720e7cef6d314715bb7fde7a4783ec1c
+      created: 1751389690538
+      modified: 1751389690538
+      sortKey: -1751389690538
+      description: ""
+    children:
+      - url: localhost:8080/cartoes
+        name: Cria um Cartao
+        meta:
+          id: req_cd403fdc30fb4ad2862bb2b3980283ff
+          created: 1751389694685
+          modified: 1752164167116
+          isPrivate: false
+          description: ""
+          sortKey: -1751389694685
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Visa Card",
+              "flag": "VISA",
+              "income": 5000.00,
+              "basicLimit": 2500.00
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/cartoes/5000
+        name: Busca todos renda menor ou igual a ...
+        meta:
+          id: req_403564318c1348e293937dc801d7375e
+          created: 1751390483559
+          modified: 1752164136568
+          isPrivate: false
+          description: ""
+          sortKey: -1751346868461.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8080/cartoes?cpf=000000001
+        name: Busca todos o cartoes de um cpf
+        meta:
+          id: req_1ec040a5e94540dca671fce341c90154
+          created: 1751398926612
+          modified: 1752164129538
+          isPrivate: false
+          description: ""
+          sortKey: -1751325455349.75
+        method: GET
+        parameters:
+          - id: pair_2c7d3be853b048c3bded7f6e0dbb07de
+            name: cpf
+            value: "0000000001"
+            description: ""
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Avaliador Credito
+    meta:
+      id: fld_412aab4ab5c54884879904455bc6bda2
+      created: 1751463064493
+      modified: 1751463064493
+      sortKey: -1751463064493
+      description: ""
+    children:
+      - url: http://localhost:8080/avaliacoes-credito
+        name: Avaliação Cliente
+        meta:
+          id: req_548a407e2a8f4125bd76ffc3e48ff11e
+          created: 1751463742222
+          modified: 1752164189627
+          isPrivate: false
+          description: ""
+          sortKey: -1751474166734
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"cpf" : "0000000001",
+            	"income":5000
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/avaliacoes-credito/solicitacoes-cartao
+        name: Solicitar Cartão
+        meta:
+          id: req_1b059ad4250a4cc4b35f012d308ef31f
+          created: 1751574585206
+          modified: 1752164227942
+          isPrivate: false
+          description: ""
+          sortKey: -1751431930709.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"idCard":2,
+            	"cpf":"0000000001",
+            	"address": "Rua teofilo sales",
+            	"limitAvailable": 20000.00
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/avaliacoes-credito/situacao-cliente?cpf=0000000001
+        name: Situação Cliente
+        meta:
+          id: req_a0df3c514a074743b7aa4cfcc44be9b8
+          created: 1751632579604
+          modified: 1752164178924
+          isPrivate: false
+          description: ""
+          sortKey: -1751410812697.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItOGRUTzdfMzlRZFVwdWtiMGhZRTYwWW16RlJWa2gxOEprc1lfS0RNaXo4In0.eyJleHAiOjE3NTIxNjQ0MDQsImlhdCI6MTc1MjE2NDEwNCwianRpIjoidHJydGNjOjZmYzZmZTQwLTdlNDEtNmRjMy1hMzlmLTYxMjEwZmQ4MTc1OSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MS9yZWFsbXMvbXNjb3Vyc2VyZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2ZTc0MmUzYi04ZDhkLTRmY2EtYjEyYS05Y2M5MjIyZWYwZTUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtc2NyZWRpdG8iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1zY291cnNlcmVhbG0iLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjI5LjAuMSIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1tc2NyZWRpdG8iLCJjbGllbnRBZGRyZXNzIjoiMTcyLjI5LjAuMSIsImNsaWVudF9pZCI6Im1zY3JlZGl0byJ9.Kv34LPlPwzDL3xm3VFgC-v71s6qxckECZU_oPm4CbgJrTFtBe-OMtCctkWoWl_1xecEaBxmVZ8hukCKEak8lCPJf2ES5TtXGgBQFNM7s1P6FxmzKXdNj_HFKs6vt_zKuivsqH6CoO-6nswIAtbK8tfgTey6gwibwBvC4Vreu_2kY3NWbx9Y2oqS7axGjkU-VOMf52aXE-sXBdALviBWWu5UlJRc7ROe6QIRGp9LpHqHfkl-vuwTFZLkRrHulnMbl3IJCPvMjsmmnH-czHdb5trLM91NpIlt03auzWJOhH4RUxoj4ILtRa_Zf9h57EpMlHAfxb1yay_Ia8UnwYvi2Rg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - url: http://localhost:8081/realms/mscourserealm/protocol/openid-connect/token
+    name: keycload token
+    meta:
+      id: req_c278c997216e4ffda0d695080dd194ed
+      created: 1751646498112
+      modified: 1752164101643
+      isPrivate: false
+      description: ""
+      sortKey: -1751646498112
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    authentication:
+      type: oauth2
+      grantType: client_credentials
+      accessTokenUrl: http://localhost:8081/realms/mscourserealm/protocol/openid-connect/token
+      clientId: mscredito
+      clientSecret: OanyQQew85tC4c51xGZ5aME9Z55rcZOO
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d9dd5f661300fd951cc19c6e641747845eeaeb0a
+    created: 1751303989510
+    modified: 1751303989510
+environments:
+  name: Base Environment
+  meta:
+    id: env_d9dd5f661300fd951cc19c6e641747845eeaeb0a
+    created: 1751303989508
+    modified: 1751303989508
+    isPrivate: false

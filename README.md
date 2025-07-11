@@ -3,7 +3,7 @@
 
 ## ✔️ Visão Geral
 
- Este projeto é uma arquitetura de microserviços construída com **Spring Boot 3**, **Spring Cloud 2025**, **RabbitMQ**, **Eureka Server** e **API Gateway**. Ele simula um ecossistema financeiro simples, contendo serviços de cadastro de clientes, gestão de cartões e avaliação de crédito.
+Este projeto é uma arquitetura de microserviços construída com **Spring Boot 3**, **Spring Cloud 2025**, **RabbitMQ**, **Eureka Server** e **API Gateway**. Ele simula um ecossistema financeiro simples, contendo serviços de cadastro de clientes, gestão de cartões e avaliação de crédito.
 
 ## ⚙️ Tecnologias Utilizadas
 
@@ -33,6 +33,7 @@
 ## 🔧 Principais Configurações
 
 As variáveis de ambiente são carregadas do arquivo `.env`. Exemplos de variáveis usadas:
+
 ```env
 EUREKA_SERVER=ms-eureka
 RABBITMQ_SERVER=ms-rabbitmq
@@ -72,12 +73,6 @@ mvn clean package -DskipTests
 ```bash
 docker-compose up -d
 ```
-
-Isso irá subir:
-- Eureka Server
-- RabbitMQ
-- Keycloak
-- Microservices (você pode subir manualmente com `docker run` se quiser separadamente)
 
 ### 4. Acessos importantes
 
@@ -126,6 +121,77 @@ Isso irá subir:
 
 - O **API Gateway** valida os tokens JWT emitidos pelo **Keycloak**.
 - O **Eureka Server** está protegido com autenticação básica.
+
+## 🔑 Configuração do Keycloak
+
+### 1. Acessar o Keycloak
+
+Abra o Keycloak no navegador:
+```
+http://localhost:8081
+```
+Usuário e senha padrão configurados no docker-compose (exemplo):
+- Usuário: admin
+- Senha: admin
+
+
+### 2. Criar o Realm
+
+1. Acesse o menu no canto superior esquerdo e clique em **“Realms”**.
+2. Clique em **“Create Realm”**.
+3. Nomeie como: `mscourserealm`.
+4. Clique em **“Create”**.
+5. Após criar, vá até **Realm Settings → General** e configure o campo **Frontend URL**:
+
+| Ambiente           | Frontend URL                         |
+|--------------------|--------------------------------------|
+| Com Docker         | `http://ms-keycloak:8080`            |
+| Sem Docker (local) | Deixe em branco                      |
+
+> ⚠️ Isso garante que os redirects e tokens emitidos sejam válidos para o endereço onde o Gateway está acessando o Keycloak.
+
+
+### 3. Criar o Client
+
+1. Dentro do realm `mscourserealm`, vá em **“Clients”**.
+2. Clique em **“Create Client”**.
+3. Configure:
+    - Client ID: `mscredito`
+    - Client Protocol: `openid-connect`
+    - Root URL: deixe em branco
+4. Clique em **“Save”**.
+5. Em **Settings**, habilite **“Authorization Enabled”** e **“Service Accounts Enabled”**, se necessário.
+6. Em **Access Settings**, configure:
+    - Valid Redirect URIs: `http://localhost:8080/*`
+    - Web Origins: `+`
+
+### 4. Criar um Usuário de Teste
+
+1. Vá até **Users**.
+2. Clique em **“Add user”**, preencha os campos obrigatórios.
+3. Depois de criar, vá até a aba **“Credentials”**, defina uma senha e marque **“Temporary: OFF”**.
+
+### 5. Configurar as Roles (opcional)
+
+Se necessário, crie roles personalizadas em **Roles** e associe aos usuários.
+
+### 6. Verificar URL do OpenID Provider
+
+Após criar o realm, o **Issuer URI** será:
+```
+http://localhost:8081/realms/mscourserealm
+```
+
+Configure este valor no **application.yaml** do mscloudgateway:
+
+```yaml
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/mscourserealm
+```
 
 ## 📊 Monitoramento e Health Check
 
